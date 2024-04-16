@@ -1,0 +1,11 @@
+{
+    "endOfLine": "auto",
+    "plugins": ["prettier-plugin-css-order", "prettier-plugin-tailwindcss"],
+    "printWidth": 200,
+    "semi": false,
+    "singleAttributePerLine": true,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "trailingComma": "es5",
+    "vueIndentScriptAndStyle": true
+}

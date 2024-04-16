@@ -1,0 +1,47 @@
+{
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "extends": ["plugin:vue/vue3-recommended", "plugin:prettier/recommended", "plugin:tailwindcss/recommended"],
+    "overrides": [
+        {
+            "files": ["*.json"],
+            "rules": { "no-unused-expressions": "off" }
+        }
+    ],
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+        "parser": "@typescript-eslint/parser"
+    },
+    "plugins": ["unused-imports", "import", "sort-destructure-keys", "typescript-sort-keys", "sort-keys-fix"],
+    "root": true,
+    "rules": {
+        "@typescript-eslint/no-unused-vars": "warn",
+        "import/no-named-as-default-member": "off",
+        "import/order": ["error", { "alphabetize": { "caseInsensitive": true, "order": "asc" }, "newlines-between": "always" }],
+        "n/no-callback-literal": "off",
+        "no-console": "off",
+        "no-empty-pattern": "warn",
+        "no-new": "off",
+        "no-unused-imports": "off",
+        "no-unused-vars": "off",
+        "sort-destructure-keys/sort-destructure-keys": ["error", { "caseSensitive": false }],
+        "sort-keys": ["error", "asc", { "allowLineSeparatedGroups": true, "caseSensitive": true }],
+        "sort-keys-fix/sort-keys-fix": "warn",
+        "tailwindcss/no-custom-classname": "off",
+        "typescript-sort-keys/interface": "error",
+        "typescript-sort-keys/string-enum": "error",
+        "unused-imports/no-unused-imports": "error",
+        "unused-imports/no-unused-vars": ["warn", { "args": "after-used", "argsIgnorePattern": "^_", "vars": "all", "varsIgnorePattern": "^_" }],
+        "vue/attribute-hyphenation": ["error", "never"],
+        "vue/attributes-order": ["error", { "alphabetical": true }],
+        "vue/component-name-in-template-casing": ["error", "PascalCase", { "registeredComponentsOnly": false }],
+        "vue/component-tags-order": ["error", { "order": ["script", "template", "style"] }],
+        "vue/html-self-closing": ["error", { "html": { "component": "always", "normal": "never", "void": "always" } }],
+        "vue/multi-word-component-names": "off",
+        "vue/no-multiple-template-root": "off",
+        "vue/prop-name-casing": ["error", "camelCase"],
+        "vue/v-on-event-hyphenation": ["error", "never", { "autofix": true }]
+    }
+}

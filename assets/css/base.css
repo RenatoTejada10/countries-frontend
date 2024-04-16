@@ -1,0 +1,5 @@
+@layer base {
+    hr {
+        @apply block w-full border-0 border-none bg-transparent;
+    }
+}
